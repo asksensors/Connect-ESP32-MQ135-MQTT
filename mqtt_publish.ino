@@ -17,7 +17,7 @@ const unsigned int writeInterval = 25000;   // write interval (in ms)
 const char* mqtt_server = "mqtt.asksensors.com";
 unsigned int mqtt_port = 1883;
 
-#define MQ135_THRESHOLD_1   500     // Fresh Air threshold
+#define MQ135_THRESHOLD_1   1000     // Fresh Air threshold
 
 WiFiClient askClient;
 PubSubClient client(askClient);
